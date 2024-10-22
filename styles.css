@@ -1,0 +1,154 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    max-width: 1200px;
+}
+
+/* Navbar */
+#navbar {
+    background: #333;
+    color: #fff;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar ul {
+    list-style: none;
+}
+
+#navbar ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+#navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#navbar ul li a:hover {
+    color: #59eec1;
+}
+
+/* Header Section */
+header {
+    background: linear-gradient(135deg, #5d92e2, #ecaf09);
+    color: white;
+    text-align: center;
+    padding: 150px 0;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.cta-button {
+    background-color: #59eec1;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background-color: #444;
+}
+
+/* About Section */
+.about-section {
+    background: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.about-section h2 {
+    margin-bottom: 20px;
+}
+
+/* Features Section */
+.features-section {
+    padding: 50px 0;
+    background: #fff;
+    text-align: center;
+}
+
+.features-section .feature-cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.feature-cards .card {
+    background: #59eec1;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    color: #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Contact Section */
+.contact-section {
+    background: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+}
+
+#contact-form input, #contact-form textarea {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+#contact-form textarea {
+    resize: none;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
